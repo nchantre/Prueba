@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/UsuarioWCF.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UsuarioWCF.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/UsuarioWCF/Usuarios.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="UsuarioModels">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sexo" type="ser:char" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UsuarioModels" nillable="true" type="tns:UsuarioModels" />
+  <xs:complexType name="ArrayOfUsuarioModels">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UsuarioModels" nillable="true" type="tns:UsuarioModels" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsuarioModels" nillable="true" type="tns:ArrayOfUsuarioModels" />
+</xs:schema>

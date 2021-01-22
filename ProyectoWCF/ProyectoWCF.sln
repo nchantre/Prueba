@@ -10,6 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{3BAEC8E7-8C1B-4960-ADDC-25454FC36FDE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIusuario", "UIusuario\UIusuario.csproj", "{E8BC57EC-C29B-43F2-8819-02D6B28AB304}"
+	ProjectSection(ProjectDependencies) = postProject
+		{537917FD-0E9D-4FB9-AE69-BDE89B2DC189} = {537917FD-0E9D-4FB9-AE69-BDE89B2DC189}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
