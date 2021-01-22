@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsuarioWCF", "UsuarioWCF\Us
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCF", "WCF", "{C1E8A031-CBDC-4D1D-96F3-8A0B7DB2B961}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{3BAEC8E7-8C1B-4960-ADDC-25454FC36FDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIusuario", "UIusuario\UIusuario.csproj", "{E8BC57EC-C29B-43F2-8819-02D6B28AB304}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{537917FD-0E9D-4FB9-AE69-BDE89B2DC189}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{537917FD-0E9D-4FB9-AE69-BDE89B2DC189}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{537917FD-0E9D-4FB9-AE69-BDE89B2DC189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8BC57EC-C29B-43F2-8819-02D6B28AB304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8BC57EC-C29B-43F2-8819-02D6B28AB304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8BC57EC-C29B-43F2-8819-02D6B28AB304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8BC57EC-C29B-43F2-8819-02D6B28AB304}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{537917FD-0E9D-4FB9-AE69-BDE89B2DC189} = {C1E8A031-CBDC-4D1D-96F3-8A0B7DB2B961}
+		{E8BC57EC-C29B-43F2-8819-02D6B28AB304} = {3BAEC8E7-8C1B-4960-ADDC-25454FC36FDE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E87AEC24-6E59-4EA9-A5B0-BB4B3E95B469}

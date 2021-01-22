@@ -12,13 +12,14 @@ namespace UsuarioWCF.BLL
     {
         #region insObj
         private DataTable tb = new DataTable();
+        private UsuarioDAL usuarioDAL;
         #endregion
 
         #region MethodGetAllUsuarioNombre
         public UsuarioModels GetAllUsuarioNombre(string Nombre)
         {
             UsuarioModels companyModels = new UsuarioModels();
-            UsuarioDAL usuarioDAL = new UsuarioDAL();
+            usuarioDAL = new UsuarioDAL();
             companyModels = usuarioDAL.GetAllUsuarioNombre(Nombre);
             return companyModels;
         }
@@ -28,7 +29,7 @@ namespace UsuarioWCF.BLL
         public string AddUsuario(UsuarioModels ms)
         {
             string mensaje = "hola";
-            UsuarioDAL usuarioDAL = new UsuarioDAL();
+            usuarioDAL = new UsuarioDAL();
             usuarioDAL.AddUsuario(ms);
             return mensaje;
         }
@@ -37,7 +38,7 @@ namespace UsuarioWCF.BLL
         #region MethodUpUsuario
         public void UpUsuario(UsuarioModels ms)
         {
-            UsuarioDAL usuarioDAL = new UsuarioDAL();
+            usuarioDAL = new UsuarioDAL();
             usuarioDAL.UpUsuario(ms);
         }
         #endregion
@@ -45,7 +46,7 @@ namespace UsuarioWCF.BLL
         #region MethodDeleteUsuario
         public void DeleteUsuario(UsuarioModels ms)
         {
-            UsuarioDAL usuarioDAL = new UsuarioDAL();
+            usuarioDAL = new UsuarioDAL();
             usuarioDAL.DeleteUsuario(ms);
         }
         #endregion
@@ -54,7 +55,7 @@ namespace UsuarioWCF.BLL
         public List<UsuarioModels> GetAllUsuario()
         {
             List<UsuarioModels> items = new List<UsuarioModels>();
-            UsuarioDAL usuarioDAL = new UsuarioDAL();
+            usuarioDAL = new UsuarioDAL();
             items = usuarioDAL.GetAllUsuario();
             return items;
         }
