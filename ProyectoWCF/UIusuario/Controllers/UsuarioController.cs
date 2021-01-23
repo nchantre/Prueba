@@ -50,8 +50,8 @@ namespace UIusuario.Controllers
                 };
                 proxy.AddUsuario(companyModels);
                 // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+               
+               return RedirectToAction("Index");
             }
             catch
             {
@@ -62,7 +62,14 @@ namespace UIusuario.Controllers
         // GET: Usuario/Edit/5
         public ActionResult Edit(string id)
         {
-            return View();
+            UsuariosClient proxy = new UsuariosClient();
+            UsuarioModels companyModels = new UsuarioModels()
+            {
+                Nombre = id
+              
+            };
+            return View(proxy.GetAllUsuarioNombre(companyModels.Nombre));
+           // return View();
         }
 
         // POST: Usuario/Edit/5
@@ -81,7 +88,6 @@ namespace UIusuario.Controllers
                 };
                 proxy.UpUsuario(companyModels);
                 // TODO: Add insert logic here
-
                 return RedirectToAction("Index");
             }
             catch
@@ -93,7 +99,13 @@ namespace UIusuario.Controllers
         // GET: Usuario/Delete/5
         public ActionResult Delete(string id)
         {
-            return View();
+            UsuariosClient proxy = new UsuariosClient();
+            UsuarioModels companyModels = new UsuarioModels()
+            {
+                Nombre = id
+
+            };
+            return View(proxy.GetAllUsuarioNombre(companyModels.Nombre));       
         }
 
         // POST: Usuario/Delete/5
